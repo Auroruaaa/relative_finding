@@ -1,0 +1,25 @@
+PLINK v1.90b7 64-bit (16 Jan 2023)
+Options in effect:
+  --bfile gt_only.present.qc.pruned
+  --out gt_only.present.germ_ped
+  --recode
+
+Hostname: jupyter-becheng-40ucsd-2eedu
+Working directory: /home/jovyan/CSE284/final_proj/data_2
+Start time: Mon Mar  2 03:26:51 2026
+
+Random number seed: 1772422011
+515807 MB RAM detected; reserving 257903 MB for main workspace.
+107362 variants loaded from .bim file.
+64 people (0 males, 0 females, 64 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to gt_only.present.germ_ped.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 64 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.999964.
+107362 variants and 64 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to gt_only.present.germ_ped.ped + gt_only.present.germ_ped.map ...
+done.
+
+End time: Mon Mar  2 03:26:51 2026

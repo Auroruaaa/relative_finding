@@ -1,0 +1,23 @@
+PLINK v1.90b7 64-bit (16 Jan 2023)
+Options in effect:
+  --bfile gt_only.present.qc.pruned.germclean
+  --missing
+  --out germclean_missing_check
+
+Hostname: jupyter-becheng-40ucsd-2eedu
+Working directory: /home/jovyan/CSE284/final_proj/data_2
+Start time: Mon Mar  2 03:42:22 2026
+
+Random number seed: 1772422942
+515807 MB RAM detected; reserving 257903 MB for main workspace.
+79641 variants loaded from .bim file.
+22 people (0 males, 0 females, 22 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to germclean_missing_check.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 22 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+--missing: Sample missing data report written to germclean_missing_check.imiss,
+and variant-based missing data report written to germclean_missing_check.lmiss.
+
+End time: Mon Mar  2 03:42:22 2026
