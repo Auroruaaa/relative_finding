@@ -26,10 +26,10 @@ The data are phased, which allows GERMLINE to detect IBD segments.
 ---
 
 ## Project Structure
-# TODO
 Example structure of the repository:
 
 ```
+# TODO
 project/
 │
 ├── data/                # processed VCF files or subset data
@@ -101,7 +101,9 @@ The notebook uses commands such as:
 These commands are executed directly inside the notebook to perform relatedness estimation and IBD segment detection.
 
 ---
+```
 # TODO
+```
 ## Results So Far
 
 So far we have:
