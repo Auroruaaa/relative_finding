@@ -147,22 +147,11 @@ These notebooks generate plots including:
 
 These visualizations help compare how the two methods detect related individuals and characterize shared genomic segments.
 
-## Future Work
+Future Work
 
 Further improvements and experiments may include:
-
-1. **GERMLINE parameter tuning**
-
-   Investigate the effect of GERMLINE parameters such as the minimum match length (`-min_m`) on IBD segment detection.
-
-2. **Segment length metrics**
-
-   Currently, GERMLINE outputs segment length primarily in **Mb**. Future work may explore preserving or converting segment lengths into **centimorgans (cM)** for better biological interpretation.
-
-3. **Scaling to additional chromosomes**
-
-   The current experiments focus on **chromosomes 1–5**. Future analysis could include more chromosomes to evaluate scalability and robustness.
-
-4. **Incorporating peer review feedback**
-
-   Future revisions will incorporate insights and suggestions from peer review to refine the analysis.
+- **GERMLINE parameter tuning** Investigate the effect of GERMLINE parameters such as the minimum match length (`-min_m`) on IBD segment detection.
+- **Segment length metrics** Currently GERMLINE outputs segment length primarily in **Mb**. Future work may explore preserving or converting segment lengths into **centimorgans (cM)** for better biological interpretation.
+- **Scaling to additional chromosomes** The current experiments focus on **chromosomes 1–5**. Future analysis could include more chromosomes to evaluate scalability and robustness.
+- **Relationship classification task** Use PLINK and GERMLINE outputs (e.g., PI_HAT, Z1+Z2, total IBD length) to build a simple classifier that predicts the degree of relatedness between individuals, and compare the classification performance of the two methods.
+- **Population-level analysis** Extend the analysis to different population groups in the 1000 Genomes dataset and evaluate whether classification accuracy varies across populations.
