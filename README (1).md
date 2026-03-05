@@ -26,7 +26,7 @@ The data are phased, which allows GERMLINE to detect IBD segments.
 ---
 
 ## Project Structure
-
+# TODO
 Example structure of the repository:
 
 ```
@@ -83,10 +83,25 @@ Open the notebook:
 jupyter notebook main.ipynb
 ```
 
-Then run all cells to reproduce the analysis.
+
+Run all cells to reproduce the analysis.
+
+Note that the notebook calls several external tools using shell commands (prefixed with `!`).  
+These commands require the following software to be installed and accessible from the command line:
+
+- PLINK v1.9
+- GERMLINE v1.5
+
+The notebook uses commands such as:
+```
+!plink --vcf input.vcf --genome --out plink_output
+!germline -input input.hap -output germline_output
+```
+
+These commands are executed directly inside the notebook to perform relatedness estimation and IBD segment detection.
 
 ---
-
+# TODO
 ## Results So Far
 
 So far we have:
