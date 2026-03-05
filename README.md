@@ -155,3 +155,4 @@ Further improvements and experiments may include:
 - **Scaling to additional chromosomes** The current experiments focus on **chromosomes 1–5**. Future analysis could include more chromosomes to evaluate scalability and robustness.
 - **Relationship classification task** Use PLINK and GERMLINE outputs (e.g., PI_HAT, Z1+Z2, total IBD length) to build a simple classifier that predicts the degree of relatedness between individuals, and compare the classification performance of the two methods.
 - **Population-level analysis** Extend the analysis to different population groups in the 1000 Genomes dataset and evaluate whether classification accuracy varies across populations.
+- **Classification Task** Use relatedness statistics from PLINK and GERMLINE as features to classify the degree of relatedness between individuals.
