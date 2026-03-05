@@ -26,16 +26,17 @@ The data are phased, which allows GERMLINE to detect IBD segments.
 ---
 
 ## Project Structure
-# TODO
 Example structure of the repository:
 
 ```
 project/
 │
-├── data/                # processed VCF files or subset data
-├── scripts/             # analysis scripts
-├── results/             # outputs from PLINK and GERMLINE
-├── main.ipynb           # main analysis notebook
+├── data/                
+├── output/             
+├── src/ 
+├──command.ipynb          
+├── main.ipynb 
+├──main_chr22.ipynb          
 └── README.md
 ```
 
@@ -130,7 +131,20 @@ Preliminary observations:
 
 Future Work
 
-Further work will compare the performance of PLINK and GERMLINE in terms of:
-- relationship classification accuracy
-- computational cost
-- differences in detected IBD sharing
+Further improvements and experiments may include:
+
+1. **GERMLINE parameter tuning**
+
+   Investigate the effect of GERMLINE parameters such as the minimum match length (`-min_m`) on IBD segment detection.
+
+2. **Segment length metrics**
+
+   Currently, GERMLINE outputs segment length primarily in **Mb**. Future work may explore preserving or converting segment lengths into **centimorgans (cM)** for better biological interpretation.
+
+3. **Scaling to additional chromosomes**
+
+   The current experiments focus on **chromosomes 1–5**. Future analysis could include more chromosomes to evaluate scalability and robustness.
+
+4. **Incorporating peer review feedback**
+
+   Future revisions will incorporate insights and suggestions from peer review to refine the analysis.
