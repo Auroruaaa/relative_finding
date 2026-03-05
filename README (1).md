@@ -35,9 +35,10 @@ project/
 ├── output/             
 ├── src/ 
 ├──command.ipynb          
-├── main.ipynb 
-├──main_chr22.ipynb          
+├── main.ipynb        
 └── README.md
+└── plot_5.ipynb
+└── plot_chr22.ipynb
 ```
 
 ---
@@ -114,7 +115,7 @@ The notebook uses commands such as:
 These commands are executed directly inside the notebook to perform relatedness estimation and IBD segment detection.
 
 ---
-# TODO
+
 ## Results So Far
 
 So far we have:
@@ -129,7 +130,24 @@ Preliminary observations:
 - GERMLINE provides **segment-level IBD information**, which can be used to compute total shared genomic length
 - parent–offspring and full-sibling relationships have similar PI_HAT values but can be distinguished using **Z1/Z2 statistics or segment patterns**
 
-Future Work
+## Visualization of Results
+
+Several notebooks are used to visualize and analyze the results:
+
+- `plot_5.ipynb` – visualization of results for **chromosomes 1–5**
+- `plot_chr22.ipynb` – visualization of results for **chromosome 22**
+
+These notebooks generate plots including:
+
+- **Z0–Z1 scatter plots** from PLINK outputs to visualize relatedness patterns
+- **PI_HAT distribution plots** showing the distribution of estimated relatedness
+- **IBD segment length distributions** from GERMLINE outputs
+- **colored relationship plots** using known relatedness labels
+- **time and space efficiency comparisons** between PLINK and GERMLINE
+
+These visualizations help compare how the two methods detect related individuals and characterize shared genomic segments.
+
+## Future Work
 
 Further improvements and experiments may include:
 
