@@ -26,10 +26,10 @@ The data are phased, which allows GERMLINE to detect IBD segments.
 ---
 
 ## Project Structure
+# TODO
 Example structure of the repository:
 
 ```
-# TODO
 project/
 │
 ├── data/                # processed VCF files or subset data
@@ -45,21 +45,33 @@ project/
 
 The main analysis is performed in:
 
-```
 main.ipynb
-```
 
-The notebook performs:
+The notebook performs the following steps:
 
-1. preprocessing of VCF data
-2. running PLINK relatedness estimation
-3. running GERMLINE segment detection
-4. comparing outputs from both tools
-5. computing summary metrics such as shared IBD
+1. **Preprocessing**
+   - extract a subset of samples from the 1000 Genomes VCF dataset
+   - prepare genotype data for downstream analysis
 
-PLINK is used to compute relatedness statistics (Z0, Z1, Z2, PI_HAT).
+2. **Quality Control (QC)**
+   - apply standard QC filters to remove low-quality variants and samples
+   - ensure reliable genotype data before relatedness analysis
 
-GERMLINE is used to detect IBD segments between phased haplotypes.
+3. **LD Pruning**
+   - prune correlated SNPs to reduce linkage disequilibrium
+   - retain approximately independent variants for relatedness estimation
+
+4. **PLINK relatedness estimation**
+
+PLINK is used to compute relatedness statistics such as **Z0, Z1, Z2, and PI_HAT**.
+
+5. **GERMLINE segment detection**
+
+GERMLINE detects **IBD segments between phased haplotypes**.
+
+6. **Comparison of outputs**
+
+The outputs from both tools are compared using summary metrics such as shared IBD and inferred relatedness.
 
 ---
 
@@ -101,8 +113,8 @@ The notebook uses commands such as:
 These commands are executed directly inside the notebook to perform relatedness estimation and IBD segment detection.
 
 ---
-
-## Results So Far (TODO)
+# TODO
+## Results So Far
 
 So far we have:
 
