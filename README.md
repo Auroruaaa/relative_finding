@@ -128,7 +128,7 @@ Preliminary observations:
 
 - PLINK quickly identifies related individuals using **PI_HAT values**
 - GERMLINE provides **segment-level IBD information**, which can be used to compute total shared genomic length
-- parent–offspring and sibling relationships have similar PI_HAT values but can be distinguished using **Z1/Z2 statistics or segment patterns**
+- parent–child and sibling relationships have similar PI_HAT values and are classified as first-order relationship; and it is distinguished with second-order relationship using **Z1/Z2 statistics or segment patterns**
 
 ## Visualization of Results
 
