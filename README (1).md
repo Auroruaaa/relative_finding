@@ -101,10 +101,8 @@ The notebook uses commands such as:
 These commands are executed directly inside the notebook to perform relatedness estimation and IBD segment detection.
 
 ---
-```
-# TODO
-```
-## Results So Far
+
+## Results So Far (TODO)
 
 So far we have:
 
