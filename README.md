@@ -147,7 +147,7 @@ These notebooks generate plots including:
 
 These visualizations help compare how the two methods detect related individuals and characterize shared genomic segments.
 
-Future Work
+## Future Work
 
 Further improvements and experiments may include:
 - **GERMLINE parameter tuning** Investigate the effect of GERMLINE parameters such as the minimum match length (`-min_m`) on IBD segment detection.
