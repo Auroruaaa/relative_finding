@@ -13,34 +13,26 @@ PLINK estimates relatedness using probabilistic IBD statistics (Z0, Z1, Z2, PI_H
 
 ---
 
-## Installation 
+## Installation
 
-To run this project, several external tools are required.  
-We recommend installing them using **conda**.
+This project requires several external tools for processing genotype data and detecting IBD segments.
 
-Create and activate the environment:
+### PLINK
 
-```
-conda create -n bio_bench python=3.9 -y
-conda activate bio_bench
-```
+We use **PLINK v1.9** for relatedness estimation.
 
+PLINK can be downloaded from the official website:
 
-Install the required tools:
-```
-conda install -c bioconda plink -y
-conda install -c bioconda bcftools -y
-conda install -c bioconda vcftools -y
-conda install -c conda-forge pandas matplotlib seaborn -y
-```
-
-
-These packages are used for processing genotype data and generating the analysis plots.
-
----
-
-Download PLINK using:
 https://www.cog-genomics.org/plink/
+
+Follow the instructions on the website to download the appropriate binary for your operating system and add it to your system PATH.
+
+Once installed, you should be able to run:
+```
+plink --help
+```
+to confirm that PLINK is installed correctly.
+
 
 ---
 
