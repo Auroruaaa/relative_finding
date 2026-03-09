@@ -99,7 +99,7 @@ relative_finding/
 │
 ├── src/                 # core scripts / functions
 │
-├── output/              # results and figures
+├── output/              # results 
 │
 ├── main.ipynb
 ├── plot.ipynb
