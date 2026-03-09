@@ -20,20 +20,19 @@ We recommend installing them using **conda**.
 
 Create and activate the environment:
 
-‘’‘
+```
 conda create -n bio_bench python=3.9 -y
 conda activate bio_bench
-’‘’
+```
 
 
 Install the required tools:
-
-‘’‘
+```
 conda install -c bioconda plink -y
 conda install -c bioconda bcftools -y
 conda install -c bioconda vcftools -y
 conda install -c conda-forge pandas matplotlib seaborn -y
-‘’‘
+```
 
 
 These packages are used for processing genotype data and generating the analysis plots.
@@ -43,9 +42,9 @@ These packages are used for processing genotype data and generating the analysis
 ### Windows Users
 
 Download PLINK using:
-‘’‘
+```
 #TODO
-’‘’
+```
 
 
 ---
@@ -57,16 +56,16 @@ We use the **GERMLINE implementation from the Gusev Lab GitHub repository**:
 https://github.com/gusevlab/germline
 
 Clone the repository:
-‘’‘
+```
 git clone https://github.com/gusevlab/germline.git
 
 cd germline
-’‘’
+```
 
 Then compile the program:
-‘’‘
+```
 make
-'''
+```
 
 
 After running `make`, the GERMLINE executable will be created and can be used in the analysis pipeline.
@@ -79,9 +78,9 @@ After running `make`, the GERMLINE executable will be created and can be used in
 
 We use PLINK to estimate pairwise relatedness using IBD statistics.
 
-'''
+```
 plink --bfile ./data/toy_plink --genome --out plink_ibd
-'''
+```
 
 
 This command generates a `.genome` file containing statistics such as **Z0, Z1, Z2, and PI_HAT**.
@@ -94,22 +93,22 @@ GERMLINE is used to detect shared IBD segments between individuals.
 
 Before running GERMLINE, we convert the dataset into the required format.
 
-'''
+```
 plink --bfile ./data/ps2_ibd.lwk --recode vcf --out ps2_ibd.lwk
-'''
+```
 
 
 This produces a VCF file that can be used for further processing.
 
 Run GERMLINE with:
-'''
+```
 ./tools/germline/germline
 -input ./data/full_samples/full_germline_pruned.ped
 ./data/full_samples/full_germline_pruned.map
 -output germline_full_out
 -min_m 3
 -bits 16
-'''
+```
 
 The output file contains the detected IBD segments between pairs of individuals.
 
