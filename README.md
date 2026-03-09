@@ -17,7 +17,7 @@ PLINK estimates relatedness using probabilistic IBD statistics (Z0, Z1, Z2, PI_H
 
 This project requires several external tools for processing genotype data and detecting IBD segments.
 
-### PLINK
+### Installing PLINK
 
 We use **PLINK v1.9** for relatedness estimation.
 
