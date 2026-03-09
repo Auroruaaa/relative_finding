@@ -59,9 +59,18 @@ After running `make`, the GERMLINE executable will be created and can be used in
 
 ---
 
-## Basic Usage
+## Example
 
+An example is provided in the `example/` folder using **chromosome 22**.
 
+If the environment is set up correctly, running this example should be sufficient to verify that the pipeline works.
+
+To reproduce the example:
+1. Open `example_chr22.ipynb` in the `example/` folder.
+2. Run the notebook cell by cell to execute the pipeline on chromosome 22.
+3. Use `plot_chr22.ipynb` to generate the visualization of the results.
+
+This example demonstrates the basic workflow of our analysis pipeline on a small dataset.
 
 
 ## Dataset
