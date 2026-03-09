@@ -39,8 +39,6 @@ These packages are used for processing genotype data and generating the analysis
 
 ---
 
-### Windows Users
-
 Download PLINK using:
 https://www.cog-genomics.org/plink/
 
