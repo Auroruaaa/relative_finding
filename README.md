@@ -89,16 +89,24 @@ The data are phased, which allows GERMLINE to detect IBD segments.
 Example structure of the repository:
 
 ```
-project/
+relative_finding/
 │
-├── data/                
-├── output/             
-├── src/ 
-├──command.ipynb          
-├── main.ipynb        
-└── README.md
-└── plot_5.ipynb
-└── plot_chr22.ipynb
+├── data/                # input data
+│
+├── example/             # small example to run the pipeline
+│   ├── example_chr22.ipynb
+│   └── plot_chr22.ipynb
+│
+├── src/                 # core scripts / functions
+│
+├── output/              # results and figures
+│
+├── main.ipynb
+├── plot.ipynb
+├── command.ipynb
+│
+├── README.md
+└── .gitignore
 ```
 
 ---
